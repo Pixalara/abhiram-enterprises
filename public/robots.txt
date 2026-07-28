@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # OWNER: update the domain below to your live site
-Sitemap: https://abhiramenterprises.com/sitemap.xml
+Sitemap: https://www.abhiramenterprises.com/sitemap.xml
