@@ -8,10 +8,10 @@
   /* all twelve categories; the hash preselects the matching filter on the products page */
   const productLinks=[['Cement','building'],['TMT Steel','building'],['PVC Pipes & Fittings','building'],['CP Taps & Wash Basins','plumbing'],['Kitchen Sinks','plumbing'],['Bathroom Accessories','plumbing'],['Electrical Switches','electrical'],['LED Lights','electrical'],['Wires & Cables','electrical'],['Curtain Rods','hardware'],['Door Hardware','hardware'],['General Hardware','hardware']];
   const footer=$('#site-footer'); if(footer) footer.innerHTML=`<div class="container"><div class="footer-grid">
-    <div class="footer-brand"><a class="brand" href="index.html"><img src="assets/abhiram_enterprises_logo.png" alt="" width="54" height="54"><span class="brand-text">Abhiram Enterprises<small>Building Materials</small></span></a><p>Your wholesale and retail source for dependable building, plumbing, electrical and hardware materials — supplied with clear guidance from selection to site.</p><div class="footer-badges"><span><i data-lucide="badge-check"></i>Quality Materials</span><span><i data-lucide="truck"></i>Reliable Supply</span></div><p class="socials-label" id="footer-social-label">Social Links</p><div class="socials" role="list" aria-labelledby="footer-social-label"><a role="listitem" href="https://www.instagram.com/abhiramenterprisesofficial?igsh=cXJ0ZHgyaXdoNHFk&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Follow Abhiram Enterprises on Instagram"><i data-lucide="instagram"></i></a></div></div>
+    <div class="footer-brand"><a class="brand" href="index.html"><img src="assets/abhiram_enterprises_logo.png" alt="" width="54" height="54"><span class="brand-text">Abhiram Enterprises<small>Building Materials</small></span></a><p>Your wholesale and retail source for dependable building, plumbing, electrical and hardware materials - supplied with clear guidance from selection to site.</p><div class="footer-badges"><span><i data-lucide="badge-check"></i>Quality Materials</span><span><i data-lucide="truck"></i>Reliable Supply</span></div><p class="socials-label" id="footer-social-label">Social Links</p><div class="socials" role="list" aria-labelledby="footer-social-label"><a role="listitem" href="https://www.instagram.com/abhiramenterprisesofficial?igsh=cXJ0ZHgyaXdoNHFk&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Follow Abhiram Enterprises on Instagram"><i data-lucide="instagram"></i></a></div></div>
     <div><h2 class="footer-title">Navigate</h2><div class="footer-links">${nav.map(([h,l])=>`<a href="${h}">${l}</a>`).join('')}<a href="contact.html">Request a Quote</a></div></div>
     <div class="footer-wide"><h2 class="footer-title">All Products</h2><div class="footer-links footer-products">${productLinks.map(([label,group])=>`<a href="products.html#${group}">${label}</a>`).join('')}</div></div>
-    <div><h2 class="footer-title">Get in touch</h2><!-- Verified business contact details. --><div class="footer-contact"><i data-lucide="phone"></i><a href="tel:+919493380030">94933 80030</a></div><div class="footer-contact"><i data-lucide="mail"></i><a href="mailto:abhiramenterprises3012@gmail.com">abhiramenterprises3012@gmail.com</a></div><div class="footer-contact"><i data-lucide="map-pin"></i><span>Ramapuram Village, Gundraju Kuppam Post, Nagari Mandal, Chittoor District, Andhra Pradesh – 517590</span></div><div class="footer-contact"><i data-lucide="clock-3"></i><span>Every day, 9:00 AM–9:00 PM</span></div></div>
+    <div><h2 class="footer-title">Get in touch</h2><!-- Verified business contact details. --><div class="footer-contact"><i data-lucide="phone"></i><a href="tel:+919493380030">94933 80030</a></div><div class="footer-contact"><i data-lucide="mail"></i><a href="mailto:abhiramenterprises3012@gmail.com">abhiramenterprises3012@gmail.com</a></div><div class="footer-contact"><i data-lucide="map-pin"></i><span>Ramapuram Village, Gundraju Kuppam Post, Nagari Mandal, Chittoor District, Andhra Pradesh - 517590</span></div><div class="footer-contact"><i data-lucide="clock-3"></i><span>Every day, 9:00 AM-9:00 PM</span></div></div>
   </div><div class="footer-bottom"><span>© <span id="year"></span> Abhiram Enterprises. All rights reserved.</span><span class="footer-credit">Designed by <a href="https://pixalara.com" target="_blank" rel="noopener noreferrer">Pixalara</a></span><span class="footer-tag">Wholesale &amp; Retail Building Materials Supplier</span></div></div>`;
   const wa=$('#whatsapp-widget'); if(wa) wa.innerHTML=`<div class="wa-wrap"><section class="wa-panel" id="wa-panel" aria-labelledby="wa-title" aria-hidden="true"><button class="wa-close" type="button" aria-label="Close WhatsApp panel"><i data-lucide="x"></i></button><h2 id="wa-title">Need help choosing materials?</h2><p>Chat with Abhiram Enterprises on WhatsApp.</p><!-- Verified WhatsApp number. --><a class="btn wa-start" target="_blank" rel="noopener" href="https://wa.me/919493380030?text=Hello%20Abhiram%20Enterprises%2C%20I%20would%20like%20to%20enquire%20about%20your%20products.">Start WhatsApp Chat <i data-lucide="external-link"></i></a></section><button class="wa-toggle" type="button" aria-label="Open WhatsApp contact panel" aria-controls="wa-panel" aria-expanded="false"><svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M16.04 3a12.8 12.8 0 0 0-11 19.35L3.3 28.8l6.6-1.73A12.9 12.9 0 1 0 16.04 3Zm0 23.46a10.6 10.6 0 0 1-5.4-1.48l-.38-.22-3.92 1.03 1.05-3.82-.25-.4a10.58 10.58 0 1 1 8.9 4.89Zm5.81-7.93c-.32-.16-1.88-.93-2.17-1.03-.29-.11-.5-.16-.72.16-.21.32-.82 1.03-1 1.24-.19.21-.37.24-.69.08-.32-.16-1.34-.49-2.55-1.58a9.6 9.6 0 0 1-1.77-2.2c-.18-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.18.21-.32.32-.53.1-.21.05-.4-.03-.56-.08-.16-.71-1.72-.98-2.36-.26-.62-.52-.54-.71-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.65s1.14 3.07 1.3 3.28c.16.21 2.24 3.42 5.42 4.8.76.32 1.35.52 1.81.66.76.24 1.45.21 2 .13.61-.09 1.88-.77 2.15-1.51.26-.74.26-1.38.18-1.51-.08-.13-.29-.21-.61-.37Z"/></svg></button></div>`;
   const menuBtn=$('.menu-toggle'), mobile=$('.mobile-nav'); const closeMenu=()=>{if(!menuBtn||!mobile)return;menuBtn.setAttribute('aria-expanded','false');menuBtn.setAttribute('aria-label','Open navigation menu');mobile.classList.remove('open');menuBtn.innerHTML='<i data-lucide="menu"></i>';window.lucide?.createIcons()};
@@ -53,23 +53,32 @@
   const productRail=$('[data-product-rail]');
   const nudgeRail=dir=>{if(!productRail)return;manualUntil=Date.now()+2600;productRail.scrollBy({left:dir*Math.max(320,productRail.clientWidth*.72),behavior:reduced?'auto':'smooth'})};
   $('[data-product-prev]')?.addEventListener('click',()=>nudgeRail(-1));$('[data-product-next]')?.addEventListener('click',()=>nudgeRail(1));
-  /* while the visitor is inside this section the rail auto-scrolls left to right at a
-     steady clip, looping back to the start; it yields briefly for manual interaction */
-  let manualUntil=0,railVisible=false,railLoop=0,railLast=0;
+  /* the rail glides left to right as the visitor scrolls the page through this section.
+     the target comes from scroll position; a lerp eases the rail toward it so the motion
+     feels smooth and premium rather than snapping frame to frame. */
+  let manualUntil=0,railVisible=false,railLoop=0,railTarget=0;const railBar=$('[data-rail-track] i');
   if(productRail&&!reduced){
-    ['pointerdown','wheel','touchstart'].forEach(evt=>productRail.addEventListener(evt,()=>{manualUntil=Date.now()+2600},{passive:true}));
-    const SPEED=90; /* px per second */
-    const step=now=>{railLoop=0;const dt=Math.min(64,now-railLast);railLast=now;
-      const max=productRail.scrollWidth-productRail.clientWidth;
-      if(railVisible&&max>0&&Date.now()>manualUntil){
-        let next=productRail.scrollLeft+SPEED*dt/1000;
-        if(next>=max-1)next=0; /* loop seamlessly back to the first card */
-        productRail.scrollLeft=next;
-      }
-      if(railVisible)railLoop=requestAnimationFrame(step);
+    ['pointerdown','wheel','touchstart'].forEach(evt=>productRail.addEventListener(evt,()=>{manualUntil=Date.now()+2500},{passive:true}));
+    const section=productRail.closest('.ae-featured-section')||productRail.parentElement;
+    const computeTarget=()=>{
+      const max=productRail.scrollWidth-productRail.clientWidth;if(max<=0)return 0;
+      const rect=section.getBoundingClientRect();
+      /* 0 as the section reaches ~78% down the viewport, 1 as its bottom passes ~22% */
+      const span=rect.height+innerHeight*.56;
+      const p=Math.min(1,Math.max(0,(innerHeight*.78-rect.top)/span));
+      return p*max;
     };
-    const runRail=()=>{if(!railLoop){railLast=performance.now();railLoop=requestAnimationFrame(step)}};
-    if('IntersectionObserver'in window){new IntersectionObserver(entries=>entries.forEach(e=>{railVisible=e.isIntersecting;if(railVisible)runRail();else if(railLoop){cancelAnimationFrame(railLoop);railLoop=0}}),{threshold:.15}).observe(productRail)}
+    const loop=()=>{railLoop=0;
+      if(Date.now()>manualUntil){
+        railTarget=computeTarget();
+        const cur=productRail.scrollLeft,diff=railTarget-cur;
+        if(Math.abs(diff)>.5){productRail.scrollLeft=cur+diff*.12} /* ease toward target */
+      }else{railTarget=productRail.scrollLeft} /* follow the user's own drag */
+      const mx=productRail.scrollWidth-productRail.clientWidth;if(railBar&&mx>0)railBar.style.transform=`scaleX(${Math.min(1,productRail.scrollLeft/mx)})`;
+      if(railVisible)railLoop=requestAnimationFrame(loop);
+    };
+    const runRail=()=>{if(!railLoop)railLoop=requestAnimationFrame(loop)};
+    if('IntersectionObserver'in window){new IntersectionObserver(entries=>entries.forEach(e=>{railVisible=e.isIntersecting;if(railVisible)runRail();else if(railLoop){cancelAnimationFrame(railLoop);railLoop=0}}),{threshold:0,rootMargin:'20% 0px 20% 0px'}).observe(productRail)}
     else{railVisible=true;runRail()}
     document.addEventListener('visibilitychange',()=>{if(document.hidden){if(railLoop){cancelAnimationFrame(railLoop);railLoop=0}}else if(railVisible)runRail()});
   }
@@ -78,7 +87,15 @@
   const applyFilter=btn=>{const key=btn.dataset.filter;$$('.filter-btn').forEach(b=>{b.classList.toggle('active',b===btn);b.setAttribute('aria-pressed',b===btn)});$$('.catalog-card').forEach((card,i)=>{const show=key==='all'||card.dataset.category===key;card.classList.add('is-hiding');setTimeout(()=>{card.hidden=!show;card.classList.remove('is-hiding','is-showing');if(show){void card.offsetWidth;card.style.animationDelay=`${Math.min(i*25,150)}ms`;card.classList.add('is-showing')}},reduced?0:180)});const shown=$$('.catalog-card').filter(c=>key==='all'||c.dataset.category===key).length,count=$('[data-filter-count]');if(count)count.innerHTML=`Showing <b>${shown}</b> of ${$$('.catalog-card').length} categories`};
   $$('.filter-btn').forEach(btn=>btn.addEventListener('click',()=>applyFilter(btn)));
   const hashFilter=$$('.filter-btn').find(b=>b.dataset.filter===location.hash.slice(1));if(hashFilter)applyFilter(hashFilter);
-  const form=$('#enquiry-form'); if(form){const validators={name:v=>v.trim().length>=2?'':'Please enter your full name.',phone:v=>v.replace(/\D/g,'').length>=7?'':'Please enter a valid phone number.',email:v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)?'':'Please enter a valid email address.',category:v=>v?'':'Please select a product category.',message:v=>v.trim().length>=10?'':'Please provide at least 10 characters.'}; const validate=field=>{const msg=validators[field.name]?.(field.value)||'';field.setAttribute('aria-invalid',String(Boolean(msg)));const error=$(`#${field.name}-error`);if(error)error.textContent=msg;return !msg}; $$('input,select,textarea',form).forEach(f=>f.addEventListener('blur',()=>validate(f))); form.addEventListener('submit',e=>{e.preventDefault();const fields=$$('input,select,textarea',form),valid=fields.map(validate).every(Boolean);if(!valid){fields.find(f=>f.getAttribute('aria-invalid')==='true')?.focus();return}form.hidden=true;const success=$('#form-success');success.hidden=false;success.focus()})}
+  const form=$('#enquiry-form'); if(form){const validators={name:v=>v.trim().length>=2?'':'Please enter your full name.',phone:v=>v.replace(/\D/g,'').length>=7?'':'Please enter a valid phone number.',email:v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)?'':'Please enter a valid email address.',category:v=>v?'':'Please select a product category.',message:v=>v.trim().length>=10?'':'Please provide at least 10 characters.'}; const validate=field=>{const msg=validators[field.name]?.(field.value)||'';field.setAttribute('aria-invalid',String(Boolean(msg)));const error=$(`#${field.name}-error`);if(error)error.textContent=msg;return !msg}; const userFields=$$('#name,#phone,#email,#category,#message',form),submitBtn=$('button[type=submit]',form); userFields.forEach(f=>f.addEventListener('blur',()=>validate(f)));
+    form.addEventListener('submit',async e=>{e.preventDefault();const valid=userFields.map(validate).every(Boolean);if(!valid){userFields.find(f=>f.getAttribute('aria-invalid')==='true')?.focus();return}
+      const label=submitBtn.innerHTML;submitBtn.disabled=true;submitBtn.textContent='Sending...';
+      const showError=t=>{submitBtn.disabled=false;submitBtn.innerHTML=label;window.lucide?.createIcons();let box=$('#form-error');if(!box){box=document.createElement('p');box.id='form-error';box.className='error';box.setAttribute('aria-live','assertive');box.style.cssText='text-align:center;margin-top:12px';submitBtn.closest('.field-full').appendChild(box)}box.textContent=t};
+      try{const res=await fetch(form.action,{method:'POST',headers:{Accept:'application/json'},body:new FormData(form)});const data=await res.json().catch(()=>({}));
+        if(res.ok&&data.success){form.hidden=true;const success=$('#form-success');success.hidden=false;success.focus()}
+        else showError(data.message||'Sorry, we could not send that. Please try again, or reach us on WhatsApp or phone.');
+      }catch(_){showError('Network issue - please try again, or reach us on WhatsApp or phone.')}
+    })}
   $('#year')?.append(new Date().getFullYear()); window.lucide?.createIcons(); requestAnimationFrame(()=>document.body.classList.add('is-ready'));
   $$('a[href$=".html"]').forEach(a=>a.addEventListener('click',e=>{if(reduced||e.ctrlKey||e.metaKey||e.shiftKey||a.target==='_blank'||a.href===location.href)return;e.preventDefault();document.body.classList.add('is-leaving');setTimeout(()=>location.href=a.href,180)}));
 })();
