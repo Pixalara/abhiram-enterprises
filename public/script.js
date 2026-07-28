@@ -97,5 +97,11 @@
       }catch(_){showError('Network issue - please try again, or reach us on WhatsApp or phone.')}
     })}
   $('#year')?.append(new Date().getFullYear()); window.lucide?.createIcons(); requestAnimationFrame(()=>document.body.classList.add('is-ready'));
-  $$('a[href$=".html"]').forEach(a=>a.addEventListener('click',e=>{if(reduced||e.ctrlKey||e.metaKey||e.shiftKey||a.target==='_blank'||a.href===location.href)return;e.preventDefault();document.body.classList.add('is-leaving');setTimeout(()=>location.href=a.href,180)}));
+  /* prefetch internal pages on intent (hover/touch/focus) so the next page is cached and loads instantly */
+  const prefetched=new Set();const prefetch=href=>{if(prefetched.has(href)||href===location.href)return;prefetched.add(href);const l=document.createElement('link');l.rel='prefetch';l.href=href;l.as='document';document.head.appendChild(l)};
+  $$('a[href$=".html"]').forEach(a=>{
+    const warm=()=>prefetch(a.href);
+    a.addEventListener('pointerenter',warm);a.addEventListener('touchstart',warm,{passive:true});a.addEventListener('focus',warm);
+    a.addEventListener('click',e=>{if(reduced||e.ctrlKey||e.metaKey||e.shiftKey||e.button!==0||a.target==='_blank'||a.href===location.href)return;e.preventDefault();document.body.classList.add('is-leaving');setTimeout(()=>{location.href=a.href},150)});
+  });
 })();
