@@ -1,0 +1,13 @@
+# Editor
+.vscode/
+
+# Sensitive business documents (not part of the website)
+GST Document.pdf
+*.pdf
+
+# OS / misc
+Thumbs.db
+.DS_Store
+
+# Dependencies (none used, but safe to ignore)
+node_modules/
