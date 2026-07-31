@@ -282,3 +282,13 @@ html{scroll-padding-top:78px}
 .product-card:hover .product-image img{transform:none}
 .contact-card:hover{transform:none}
 }
+
+/* ---- Render performance ----
+   Below-the-fold sections are skipped during the first paint and rendered as they
+   approach the viewport. contain-intrinsic-size keeps the scrollbar honest so this
+   never causes scroll jumping. Only applied to sections that are always off-screen
+   on load, never to the hero or the first content block. */
+.ae-applications-section,.ae-featured-section,.ae-journey-section,.ae-final-cta,.cta-band,.site-footer{content-visibility:auto;contain-intrinsic-size:auto 640px}
+.ae-categories-section{content-visibility:auto;contain-intrinsic-size:auto 1200px}
+/* sticky filter bar and sticky build visual must not be inside a skipped subtree */
+.ae-build-section{content-visibility:visible}
