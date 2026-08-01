@@ -43,6 +43,14 @@ has('.site-header .brand', 'header brand');
 has('.desktop-nav .nav-link', 'desktop nav links');
 has('.menu-toggle', 'mobile menu toggle');
 has('.site-footer .footer-grid', 'footer grid');
+{
+  const list = doc.querySelector('.footer-products');
+  const count = list ? list.querySelectorAll('a').length : 0;
+  const rows = list ? list.style.getPropertyValue('--rows') : '';
+  if (!count) fails.push('footer product list is empty');
+  if (!rows) fails.push('footer list is missing the --rows value that keeps it two columns');
+  else if (Number(rows) !== Math.ceil(count / 2)) fails.push(`--rows is ${rows} for ${count} products (expected ${Math.ceil(count / 2)})`);
+}
 has('.wa-toggle', 'whatsapp toggle');
 
 const leftover = doc.querySelectorAll('[data-lucide]').length;
